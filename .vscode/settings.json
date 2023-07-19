@@ -3,5 +3,19 @@
     "./"
   ],
   "deno.enable": true,
-  "editor.inlayHints.enabled": "off"
+  "deno.lint": true,
+  "deno.unstable": false,
+  "editor.inlayHints.enabled": "off",
+  "editor.defaultFormatter": "denoland.vscode-deno",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  }
 }

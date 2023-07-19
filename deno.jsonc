@@ -1,5 +1,22 @@
 {
+  "imports": {
+    "hono": "https://deno.land/x/hono@v3.3.1/mod.ts",
+    "deno-dom": "https://deno.land/x/deno_dom@v0.1.38/deno-dom-wasm.ts",
+    "@/": "./src/",
+    "@services/": "./src/services/",
+    "@router/": "./src/router/"
+  },
   "tasks": {
-    "dev": "deno run  --allow-net --watch hello.ts"
+    "dev": "deno run  --allow-net --watch src/main.ts"
+  },
+  "lint": {
+    "include": [
+      "src/"
+    ]
+  },
+  "fmt": {
+    "indentWidth": 2,
+    "semiColons": false,
+    "singleQuote": true
   }
 }
