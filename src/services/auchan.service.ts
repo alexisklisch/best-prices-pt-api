@@ -50,7 +50,7 @@ export const getSales = async (url: string) => {
   })
 
   return {
-    size: products.length,
+    watched: products.length,
     products: products,
   }
 }

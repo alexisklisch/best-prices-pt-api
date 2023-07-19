@@ -21,7 +21,8 @@ export const getSales = async (url: string, productQuery: string) => {
     }
   })
 
-  console.log(products.length)
-
-  return products
+  return {
+    watched: products.length,
+    products: products,
+  }
 }
