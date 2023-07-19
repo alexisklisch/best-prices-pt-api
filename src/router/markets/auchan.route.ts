@@ -3,6 +3,7 @@ import { Hono } from 'hono'
 
 const auchan = new Hono()
 
+// Search
 auchan.get('/auchan', async (c) => {
   const { product, size } = c.req.query()
   const data = await getSales(

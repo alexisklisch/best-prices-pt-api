@@ -34,8 +34,12 @@ export const getSales = async (url: string) => {
     const imgURL = new URL(imgLink)
     const image = imgURL.origin + imgURL.pathname
 
+    // Calc capacity
+    const capacity = +price / +unitPriceValue
+
     return {
       title,
+      capacity: parseFloat(capacity.toFixed(2)),
       price: +price,
       unitPrice: {
         value: +unitPriceValue,
